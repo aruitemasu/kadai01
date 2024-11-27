@@ -2,6 +2,9 @@
 # SPDX-FileCopyrightText: 2024 Katsumi Sunahara
 # SPDX-License-Identifier: BSD-3-Clause
 
+import sys
+
+
 def factorial(n):
     if n < 0:
         return "負の数には階乗の定義がありません。"
