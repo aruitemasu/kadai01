@@ -13,15 +13,16 @@
    -テスト済みバージョン: 3.7~3.11
 
 ##動作環境
-- Ubuntu 24.04 LST
+- Ubuntu 20.04 LST
 
 - © 2024 Katsumi Sunahara
 
 ##使用方法
 
 1.このリポジトリをクローンします。
-git clone https://github.com/aruitemasu/kadai01.git
-cd kadai01
+git clone
+https://github.com/aruitemasu/kadai01.git
+cd robotkadai01
 
 2.スクリプトの実行
 python3 kaijou.py
