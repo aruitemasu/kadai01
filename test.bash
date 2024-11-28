@@ -8,15 +8,15 @@ ng () {
 res=0
 
 ### NORMAL INPUT ###
-out=$(seq 5 | ./kaijou.py)
+out=$(seq 5 | ./kaijou)
 [ "${out}" = 15 ] || ng "$LINENO"
 
 ### STRANGE INPUT ###
-out=$(echo あ | ./kaijou.py)
+out=$(echo あ | ./kaijou)
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(echo | ./kaijou.py)
+out=$(echo | ./kaijou)
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
