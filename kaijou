@@ -6,6 +6,7 @@ import sys
 
 
 def factorial(n):
+    """階乗を計算する関数"""
     if n < 0:
         return "負の数には階乗の定義がありません。"
     elif n == 0 or n == 1:
@@ -16,9 +17,25 @@ def factorial(n):
             result *= i
         return result
 
-# 自分の手で入力する
-try:
-    number = int(input("階乗を計算する数を入れてください:"))
-    print(f"{number} の階乗の{factorial(number)}")
-except ValueError:
-    print("整数を入力してください。")
+
+def main():
+    """標準入力から数値を受け取り、階乗を計算"""
+    try:
+        # 標準入力を受け取る
+        input_data = sys.stdin.read().strip()
+
+        # 数値に変換できなければエラー
+        number = int(input_data)
+
+        #階乗を計算して出力
+        if number < 0:
+            print("負の数には階乗の定義がありません。")
+        else:
+            print(f"{number} の階乗の{factorial(number)}")
+    except ValueError:
+        print("整数を入力してください。")
+        sys.exit(1)
+
+
+if __name__ == "__main__":
+    main()
