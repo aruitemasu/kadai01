@@ -11,15 +11,15 @@ res=0
 
 # 正常な入力
 out=$(echo 5 | ./kaijou)
-expected="5 の階乗の120"
+expected="5 の階乗は120"
 [ "$out" = "$expected" ] || ng "$LINENO"
 
 out=$(echo 0 | ./kaijou)
-expected="0 の階乗の1"
+expected="0 の階乗は1"
 [ "$out" = "$expected" ] || ng "$LINENO"
 
 out=$(echo 1 | ./kaijou)
-expected="1 の階乗の1"
+expected="1 の階乗は1"
 [ "$out" = "$expected" ] || ng "$LINENO"
 
 #異常な入力

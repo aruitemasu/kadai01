@@ -31,7 +31,7 @@ def main():
         if number < 0:
             print("負の数には階乗の定義がありません。")
         else:
-            print(f"{number} の階乗の{factorial(number)}")
+            print(f"{number} の階乗は{factorial(number)}")
     except ValueError:
         print("整数を入力してください。")
         sys.exit(1)
