@@ -1,4 +1,4 @@
-# 階乗計算のコマンド
+# 階乗のコマンド
 
 このリポジトリは、pathonで書かれた階乗計算のプログラムを提供します。入力された整数の階乗の計算をして、その結果が表示されます。
 
@@ -15,56 +15,38 @@
 ##動作環境
 - Ubuntu 20.04 LST
 
-- © 2024 Katsumi Sunahara
+##インストールとセットアップ
+
+1.このリポジトリをクローンします。
+
+git clone https://github.com/aruitemasu/kadai01.git
+cd robotkadai01
+
+2.スクリプトの実行権限
+chmod +x kaijou
+chmod +x test.bash
 
 ##使用方法
 
-1.このリポジトリをクローンします。
-git clone
-https://github.com/aruitemasu/kadai01.git
-cd robotkadai01
+プログラムの動作
 
-2.スクリプトの実行
-python3 kaijou.py
+1.直接実行するkaijouスクリプトを使用して階乗を計算するには、標準入力から数値を渡します。
+echo <整数> | ./kaijou
+例
+echo 5 | ./kaijou
+出力
+5 の階乗の 120
 
-3.プログラムの動作 例:
-階乗を計算する数を入れてください: 5
-5 の階乗は 120 です。
+2.異常な入力
+整数以外のものを入力をした場合、エラーメッセージが表示され、終了ステータスが1になります。
+例
+echo -3 | ./kaijou
+出力
+負の数には階乗の定義がありません。
 
 ##サンプルコード
 
-以下は、このリポジトリのkaijou.pyスクリプトのサンプルコードです。
 
-#!/usr/bin/python3
-
-
-def factorial(n):
-    if n < 0:
-        return "負の数には階乗の定義がありません。"
-    elif n == 0 or n == 1:
-        return 1
-    else:
-        result = 1
-        for i in range(2, n + 1):
-            result *= i
-        return result
-
-#自分の手で入力する
-try:
-    number = int(input("階乗の計算する数を入れてください:"))
-    print(f"{number} の階乗は{factorial(number)}")
-except ValueError:
-    print("整数を入力してください。")
-
-##エラー処理
-
-負の数を入力した場合
-階乗を計算する数を入れてください: -3
--3 の階乗の負の数には階乗の定義がありません。
-
-整数以外を入力した場合
-階乗を計算する数を入力してください: abc
-整数を入力してください
 
 ##ライセンス
 
