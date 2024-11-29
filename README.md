@@ -28,7 +28,7 @@
 
 - 2.robotkadai01のディレクトリに移動してから./kaijouを実行してください。
 
-```cd robotkadai01```
+```cd kadai01```
 
 # 使用方法
 プログラムの動作
