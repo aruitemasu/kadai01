@@ -6,7 +6,7 @@ import sys
 
 
 def factor(n):
-    """階乗を計算する関数"""
+    # 階乗を計算する関数
     if n < 0:
         return "負の数には階乗の定義がありません。"
     elif n == 0 or n == 1:
@@ -20,7 +20,7 @@ def factor(n):
 
 
 def main():
-    """標準入力から数値を受け取り、階乗を計算"""
+    # 標準入力から数値を受け取り、階乗を計算
     try:
         # 標準入力を受け取る
         inp_data = sys.stdin.read().strip()
