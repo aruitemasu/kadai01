@@ -26,7 +26,7 @@
 
 - 1.このリポジトリをクローンします。
 
-git clone https://github.com/aruitemasu/kadai01.git
+```git clone https://github.com/aruitemasu/kadai01.git```
 
 - 2.robotkadai01のディレクトリに移動してから./kaijouを実行してください。
 
@@ -50,11 +50,8 @@ git clone https://github.com/aruitemasu/kadai01.git
 
 例
 
-```echo 5 | ./kaijou```
-
-出力結果
-
-5 の階乗は 120
+```echo 5 | ./kaijou
+5 の階乗は 120```
 
 - 2.異常な入力
 
@@ -62,29 +59,18 @@ git clone https://github.com/aruitemasu/kadai01.git
 
 例
 
-```echo -3 | ./kaijou```
+```echo -3 | ./kaijou
+負の数には階乗の定義がありません。```
 
-出力結果
-
-```負の数には階乗の定義がありません。```
-
-例
-
-```echo kanji | ./kaijou```
-
-出力結果
-
-```整数を入力してください。```
+```echo kanji | ./kaijou
+整数を入力してください。```
 
 # 動作確認のテスト
 
 ```test.bash```を使用して、```kaijou```のスクリプトが正しく動作しているか確認します。
 
-```./test.bash```
-
-この出力になってればよい
-
-```OK```
+```./test.bash
+OK```
 
 # ライセンスと著作権
 
