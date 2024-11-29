@@ -71,6 +71,7 @@ echo -3 | ./kaijou
 負の数には階乗の定義がありません。
 ```
 
+文字の場合
 
 ```
 echo kanji | ./kaijou
