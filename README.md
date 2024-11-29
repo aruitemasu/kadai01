@@ -19,8 +19,8 @@
 
 # ファイルの構成
 
-- kaijou:階乗を計算するためのPythonスクリプト
-- test.bash:kaijouスクリプトの動作確認をするテストスクリプト
+- ```kaijou```:階乗を計算するためのPythonスクリプト
+- ```test.bash```:```kaijou```スクリプトの動作確認をするテストスクリプト
 
 # インストールとセットアップ
 
@@ -30,13 +30,13 @@ git clone https://github.com/aruitemasu/kadai01.git
 
 - 2.robotkadai01のディレクトリに移動してから./kaijouを実行してください。
 
-cd robotkadai01
+```cd robotkadai01```
 
 - 3.スクリプトの実行権限
 
-chmod +x kaijou
+```chmod +x kaijou```
 
-chmod +x test.bash
+```chmod +x test.bash```
 
 # 使用方法
 
@@ -46,11 +46,11 @@ chmod +x test.bash
 
 直接実行するkaijouスクリプトを使用して階乗を計算するには、標準入力から数値を計算します。
 
-echo <整数> | ./kaijou
+```echo <整数> | ./kaijou```
 
 例
 
-echo 5 | ./kaijou
+```echo 5 | ./kaijou```
 
 出力結果
 
@@ -66,7 +66,7 @@ echo 5 | ./kaijou
 
 出力結果
 
-負の数には階乗の定義がありません。
+```負の数には階乗の定義がありません。```
 
 例
 
@@ -74,11 +74,17 @@ echo 5 | ./kaijou
 
 出力結果
 
-整数を入力してください。
+```整数を入力してください。```
 
 # 動作確認のテスト
 
-test.bashを
+```test.bash```を使用して、```kaijou```のスクリプトが正しく動作しているか確認します。
+
+```./test.bash```
+
+この出力になってればよい
+
+```OK```
 
 # ライセンスと著作権
 
