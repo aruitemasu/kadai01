@@ -1,4 +1,5 @@
 # 階乗のコマンド
+[![test](https://github.com/aruitemasu/kadai01/actions/workflows/test.yml/badge.svg)](https://github.com/aruitemasu/kadai01/actions/workflows/test.yml)
 
 このリポジトリは、pathonで書かれた階乗計算のプログラムを提供します。入力された整数の階乗の計算をして、その結果が表示されます。
 
