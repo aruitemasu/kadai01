@@ -1,7 +1,7 @@
 # 階乗のコマンド
 [![test](https://github.com/aruitemasu/kadai01/actions/workflows/test.yml/badge.svg)](https://github.com/aruitemasu/kadai01/actions/workflows/test.yml)
 
-このリポジトリは、階乗計算のプログラムになります。入力された整数の階乗を計算して、その結果が表示されます。
+このリポジトリは、階乗計算のプログラムになります。入力された整数の階乗を計算して、その結果が表示されます。異常な入力にもエラーメッセージが表示されます。その他にも動作確認のテストスクリプトtest.bashも含まれています。
 
 # 機能
 
@@ -11,10 +11,16 @@
 
 # 必要なソフトウェア
 - python
-   -　テスト済みバージョン: 3.7~3.11
+
+ - テスト済みバージョン: 3.7~3.11
 
 # 動作環境
 - Ubuntu 20.04 LST
+
+# ファイルの構成
+
+- kaijou:階乗を計算するためのPythonスクリプト
+- test.bash:kaijouスクリプトの動作確認をするテストスクリプト
 
 # インストールとセットアップ
 
@@ -70,6 +76,12 @@ echo kanji | ./kaijou
 
 整数を入力してください。
 
-# ライセンス
+# 動作確認のテスト
+
+test.bashを
+
+# ライセンスと著作権
 
 このソフトウェアパッケージは3条項BSDライセンスの下、再頒布および使用が許可されています。
+
+© 2024 Katsumi Sunahara
