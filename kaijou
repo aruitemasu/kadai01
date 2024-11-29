@@ -21,21 +21,17 @@ def factor(n):
 
 def main():
     # 標準入力から数値を受け取り、階乗を計算
-    try:
         # 標準入力を受け取る
-        inp_data = sys.stdin.read().strip()
+    inp_data = sys.stdin.read().strip()
 
         # 数値に変換できなければエラー
-        num = int(inp_data)
+    num = int(inp_data)
 
         #階乗を計算して出力
-        if num < 0:
-            print("負の数には階乗の定義がありません。")
-        else:
-            print(f"{num} の階乗は{factor(num)}")
-    except ValueError:
-        print("整数を入力してください。")
-        sys.exit(1)
+    if num < 0:
+        print("負の数には階乗の定義がありません。")
+    else:
+        print(f"{num} の階乗は{factor(num)}")
 
 
 main()
