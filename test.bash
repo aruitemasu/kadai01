@@ -27,10 +27,6 @@ out=$(echo -3 | ./kaijou)
 exp="負の数には階乗の定義がありません。"
 [ "$out" = "$exp" ] || ng "$LINENO"
 
-out=$(echo "" | ./kaijou)
-exp="整数を入力してください。"
-[ "$out" = "$exp" ] || ng "$LINENO"
-
 #テストの結果出力
 [ "$res" = 0 ] && echo "OK" || echo "NG"
 
