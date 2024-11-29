@@ -24,11 +24,15 @@
 # 導入方法
 - 1.このリポジトリをクローンします。
 
-```git clone https://github.com/aruitemasu/kadai01.git```
+```
+git clone https://github.com/aruitemasu/kadai01.git
+```
 
 - 2.robotkadai01のディレクトリに移動してから./kaijouを実行してください。
 
-```cd kadai01```
+```
+cd kadai01
+```
 
 # 使用方法
 プログラムの動作
@@ -36,12 +40,19 @@
 
 直接実行するkaijouスクリプトを使用して階乗を計算するには、標準入力から数値を計算します。
 
-```echo <整数> | ./kaijou```
+```
+echo <整数> | ./kaijou
+```
+
 
 例
 
 ```
 echo 5 | ./kaijou
+```
+
+
+```
 5 の階乗は 120
 ```
 
@@ -52,11 +63,20 @@ echo 5 | ./kaijou
 
 ```
 echo -3 | ./kaijou
+```
+
+
+```
 負の数には階乗の定義がありません。
 ```
 
+
 ```
 echo kanji | ./kaijou
+```
+
+
+```
 整数を入力してください。
 ```
 
