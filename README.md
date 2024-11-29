@@ -15,7 +15,7 @@
  - テスト済みバージョン: 3.7~3.11
 
 # 動作環境
-- Ubuntu 20.04 LST
+- Ubuntu 20.04
 
 # ファイルの構成
 
@@ -62,7 +62,7 @@ echo 5 | ./kaijou
 
 例
 
-echo -3 | ./kaijou
+```echo -3 | ./kaijou```
 
 出力結果
 
@@ -70,7 +70,7 @@ echo -3 | ./kaijou
 
 例
 
-echo kanji | ./kaijou
+```echo kanji | ./kaijou```
 
 出力結果
 
